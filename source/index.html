@@ -3,15 +3,45 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Cat Energy: Главная</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="header">Шапка</header>
-  <p>Привет, мир</p>
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип сайта Cat Energy">
+      <img class="main-header__logo-text" src="#" width="101" height="18" alt="Cat Energy">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav_list">
+          <li class="main-nav__item main-nav-item--current">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Годбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main-container">
+      <section class="promo">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <p class="promo__text">Занялся собой? Займись котом!</p>
+      </section>
+    </main>
+
+  </header>
+
 </body>
 
 </html>
