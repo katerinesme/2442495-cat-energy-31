@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Energy: Каталог</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <!-- Шапка -->
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип сайта Cat Energy">
+      <img class="main-header__logo-text" src="#" width="101" height="18" alt="Cat Energy логотип">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list main-nav__list--closed">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--current" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Годбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Главное содержание -->
+  <main class="main-container">
+    <!-- Каталог продукции -->
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <h1 class="catalog__title">Каталог продукции</h1>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <div class="catalog__item-wrapper">
+              <a class="catalog__photo-link" href="#" tabindex="-1">
+                <img class="catalog__card-image" src="#" width="161" height="172" alt="Корм для котов Cat Energy со вкусом курицы 500 грамм.">
+              </a>
+              <a class="catalog__title-link" href="'#">
+                <h2 class="catalog__card-title">Cat Energy PRO 500 г</h2>
+              </a>
+              <table class="catalog__table card-table">
+                <thead class="visually-hidden">Описание товара</thead>
+                <tbody>
+                  <tr class="card-table_row">
+                    <td class="card-table__item">Масса</td>
+                    <td class="card-table__item-desc">500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="card-table__item">Вкус</td>
+                    <td class="card-table__item-desc">Курица</td>
+                  </tr>
+                  <tr>
+                    <td class="card-table__item">Цена</td>
+                    <td class="card-table__item-desc">700 ₽</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a class="catalog__link catalog__link--button button" href="#">Заказать</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- Подвал сайта -->
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="#">
+        <img class="page-footer__logo-text" src="#" width="128" height="24" alt="Cat Energy логотип">
+      </a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--tg" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <a class="author-logo" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">Логотип компании разработчика сайта</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
