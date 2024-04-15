@@ -16,8 +16,12 @@
   <!-- Шапка -->
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип сайта Cat Energy">
-      <img class="main-header__logo-text" src="#" width="101" height="18" alt="Cat Energy логотип">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="icons/logo-desktop.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="icons/logo-tablet.svg">
+        <img class="main-header__logo-image" src="icons/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
+      </picture>
+      <img class="main-header__logo-text" src="icons/logo-text.svg" width="101" height="18" alt="Cat Energy логотип">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
