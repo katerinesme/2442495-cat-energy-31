@@ -1,1 +1,12 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
