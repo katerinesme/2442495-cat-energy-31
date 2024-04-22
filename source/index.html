@@ -15,19 +15,19 @@
 <body class="page__body">
   <!-- Шапка -->
   <header class="main-header">
-    <a class="main-header__logo  logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
-        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-        <img class="logo__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
-      </picture>
-      <img class="logo__logo-text logo__logo-text--header" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo  logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+          <img class="logo__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
+        </picture>
+        <img class="logo__logo-text logo__logo-text--header" src="images/logo-text.svg" width="101" height="21" alt="Cat Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Переключить навигацию</span>
+        </button>
         <ul class="main-nav__list main-nav__list--closed">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
@@ -39,8 +39,8 @@
             <a class="main-nav__link" href="#">Годбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <!-- Главное содержание -->
   <main class="main-container">
