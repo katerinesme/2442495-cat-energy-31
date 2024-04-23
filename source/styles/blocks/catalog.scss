@@ -1,0 +1,26 @@
+.catalog__wrapper {
+  padding: 27px 25px 20px;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.catalog__photo-link {
+  display: block;
+}
+
+.catalog__title-link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $base-third;
+  text-transform: uppercase;
+  text-decoration: none;
+}

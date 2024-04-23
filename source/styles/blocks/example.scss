@@ -4,6 +4,58 @@
 }
 
 .example__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
+}
+
+.example__description {
+  color: $dark-grey;
+}
+
+.example__list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.example__item {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__definition {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__meaning {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.example__expenses {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }

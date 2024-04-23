@@ -1,0 +1,20 @@
+.contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 26px 20px;
+}
+
+.contacts__title {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $base-secondary;
+  width: 140px;
+}
+
+.contacts__adress {
+  width: 140px;
+}
