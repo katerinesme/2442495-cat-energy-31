@@ -11,6 +11,12 @@
   font-weight: 400;
 }
 
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .catalog__photo-link {
   display: block;
 }
@@ -24,3 +30,10 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.catalog__table {
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+}
+
