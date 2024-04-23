@@ -13,10 +13,23 @@
 
 .main-nav__link {
   display: block;
+  position: relative;
   font-family: $secondary-font;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 24px;
   padding: 10px 16px;
   text-transform: uppercase;
   color: $base-color;
   text-decoration: none;
 }
+
+.main-nav__link--current::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 15px;
+  width: calc(100% - 30px);
+  background-color: $accent-color;
+}
+

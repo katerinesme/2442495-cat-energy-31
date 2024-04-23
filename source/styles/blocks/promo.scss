@@ -1,0 +1,44 @@
+.promo {
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile@1x.jpg");
+  background-repeat: repeat, no-repeat;
+  background-size: 100% auto;
+  background-color: #68b738;
+}
+
+.promo__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: $secondary-font;
+  color: $light-base;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__text {
+  font-family: $secondary-font;
+  color: $light-base;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3px;
+}
+
+.promo__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: $base-color;
+}
