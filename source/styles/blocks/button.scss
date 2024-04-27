@@ -2,14 +2,20 @@
   display: inline-block;
   width: 100%;
   padding: 10px 15px;
+  font-family: $secondary-font;
   text-transform: uppercase;
   border: none;
   text-align: center;
+  text-decoration: none;
 }
 
 .button--primary {
   font-family: $secondary-font;
   background-color: $accent-color;
   color: $light-base;
-  text-decoration: none;
+}
+
+.button--secondary {
+  background-color: $light-secondary;
+  color: $dark-grey;
 }

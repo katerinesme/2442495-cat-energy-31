@@ -9,12 +9,21 @@
   margin: 0;
   font-family: $secondary-font;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   color: $base-secondary;
   width: 140px;
 }
 
-.contacts__adress {
+.contacts__address {
   width: 140px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-grey;
+  font-style: normal;
+}
+
+.contacts--catalog {
+  background-color: $light-secondary;
 }

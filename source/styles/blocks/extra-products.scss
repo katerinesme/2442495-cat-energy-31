@@ -1,0 +1,24 @@
+.extra-products__wrapper {
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.extra-products__table {
+  width: 100%;
+}
+
+.extra-products__bonus {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/bonus-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 290px;
+}
+
+.extra-products__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $light-base;
+  text-align: center;
+}

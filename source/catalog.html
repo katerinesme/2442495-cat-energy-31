@@ -37,7 +37,7 @@
               <a class="main-nav__link  main-nav__link--current" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Годбор программы</a>
+              <a class="main-nav__link" href="#">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -235,7 +235,7 @@
                   </tbody>
                 </table>
               </div>
-              <a class="catalog__link catalog__link--button button" href="#">Заказать</a>
+              <a class="catalog__link button button--primary" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
@@ -270,7 +270,9 @@
             </li>
             <li class="catalog__item">
               <div class="catalog__show-more-wrapper">
-                <h2 class="catalog__card-title">Показать еще 100500 товаров</h2>
+                <a class="catalog__title-link" href="'#">
+                  <h2 class="catalog__card-title">Показать еще 100500 товаров</h2>
+                </a>
                 <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
               </div>
               <a class="catalog__link button button--secondary" href="#">Показать все</a>
@@ -281,63 +283,63 @@
       <!-- Дополнительная продукция -->
       <section class="extra-products">
         <div class="extra-products__wrapper">
-          <table class="extra-products__table">
-            <caption class="extra-products__caption">
-              <h2 class="extra-products__title">Дополнительные товары</h2>
+          <table class="extra-products__table product-table">
+            <caption class="product-table__caption">
+              <h2 class="product-table__title">Дополнительные товары</h2>
             </caption>
             <thead class="visually hidden">
-              <tr>
+              <tr class="visually-hidden">
                 <th>Название товара</th>
                 <th>Количество товара</th>
                 <th>Стоимость
                 <th>Действие</th>
               </tr>
             </thead>
-            <tbody class="extra-products__table-list product-table">
+            <tbody class="product-table__body">
               <tr class="product-table__row">
-                <td class="product-table__item">Сахарозаменитель</td>
+                <td class="product-table__item-title">Сахарозаменитель</td>
                 <td class="product-table__item">1 упаковка (100 г)</td>
                 <td class="product-table__item">200 ₽</td>
-                <td class="product-table__item">
+                <td class="product-table__item-action">
                   <a class="product-table__link button button--primary" href="#">Заказать</a>
                 </td>
               </tr>
               <tr class="product-table__row">
-                <td class="product-table__item">Питьевая вода</td>
+                <td class="product-table__item-title">Питьевая вода</td>
                 <td class="product-table__item">5 литров</td>
                 <td class="product-table__item">50 ₽</td>
-                <td class="product-table__item">
+                <td class="product-table__item-action">
                   <a class="product-table__link button button--primary" href="#">Заказать</a>
                 </td>
               </tr>
               <tr class="product-table__row">
-                <td class="product-table__item">Молоко</td>
+                <td class="product-table__item-title">Молоко</td>
                 <td class="product-table__item">1 литр</td>
                 <td class="product-table__item">100 ₽</td>
-                <td class="product-table__item">
+                <td class="product-table__item-action">
                   <a class="product-table__link button button--primary" href="#">Заказать</a>
                 </td>
               </tr>
               <tr class="product-table__row">
-                <td class="product-table__item">Витамины</td>
+                <td class="product-table__item-title">Витамины</td>
                 <td class="product-table__item">1 упаковка (30 г)</td>
                 <td class="product-table__item">300 ₽</td>
-                <td class="product-table__item">
+                <td class="product-table__item-action">
                   <a class="product-table__link button button--primary" href="#">Заказать</a>
                 </td>
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class="extra-products__bonus">
-          <p class="extra-products__text">Закажите все и получите чехол для кота в подарок!</p>
+          <div class="extra-products__bonus">
+            <p class="extra-products__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
       <!-- Акции, новинки - подписаться -->
       <section class="subscribe-promotion">
         <div class="subscribe-promotion__wrapper">
           <h2 class="subscribe-promotion__title">Акции и новинки</h2>
-          <h3 class="subscribe-promotion__title-desc">Подпишитесь на наши новости и не пропустите ни одного предложения!</h3>
+          <p class="subscribe-promotion__desc">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
           <form class="subscribe-promotion__form form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Ваш email</label>
             <input class="form__field" type="email" id="subscribe-email" name="user-email" placeholder="кuklachev@gmail.com" required>
@@ -346,15 +348,15 @@
         </div>
       </section>
       <!-- Контакты страницы каталог -->
-      <section class="contacts">
+      <section class="contacts contacts--catalog">
         <div class="contacts__wrapper contacts__wrapper--map">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__street">ул. Большая Конюшенная, д. 19/8
+          <h2 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
             <span class="contacts__city">Санкт-Петербург</span>
           </address>
         </div>
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.320472476648515!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1712836382877!5m2!1sru!2sru" width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.320472476648515!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1712836382877!5m2!1sru!2sru" width="320" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <span class="map__pin"></span>
         </div>
       </section>
@@ -365,7 +367,7 @@
         <a class="page-footer__logo logo" href="#">
           <img class="logo__text logo__text--footer" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy логотип">
         </a>
-        <ul class="social-list">
+        <ul class="page-footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
