@@ -18,24 +18,69 @@
 }
 
 .program__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 29px;
-  padding-left: 90px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 }
 
+.program__title::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+}
+
+.program__title--slim::before {
+  margin-right: 20px;
+  background-image: url("../../icons/stack.svg#icon-cat-slim");
+  width: 50px;
+}
+
+.program__title--pro::before {
+  margin-right: 11px;
+  background-image: url("../../icons/stack.svg#icon-cat-sport");
+  width: 67px;
+}
+
 .program__description {
+  position: relative;
   margin-bottom: 38px;
 }
 
 .program__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   text-decoration: none;
   color: $base-color;
+}
+
+.program__link::after {
+  content: "";
+  mask-image: url("../../icons/stack.svg#icon-arrow");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: $base-color;
+  width: 32px;
+  height: 10px;
+}
+
+.program__link:hover::after,
+.program__link:focus::after {
+  background-color: $accent-color;
+}
+
+.program__link:active {
+  opacity: 0.3;
 }

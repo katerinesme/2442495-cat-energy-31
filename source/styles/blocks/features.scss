@@ -24,6 +24,38 @@
 }
 
 .features__item {
-  padding-left: 80px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  gap: 20px;
   color: $dark-grey;
+}
+
+.features__item::before {
+  content: "";
+  background-color: $accent-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+}
+
+.features__item--leaf::before {
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-size: 30px 32px;
+}
+
+.features__item--powder::before {
+  background-image: url("../../icons/stack.svg#icon-powder");
+  background-size: 26px 29px;
+}
+
+.features__item--table-set::before {
+  background-image: url("../../icons/stack.svg#icon-table-set");
+  background-size: 25px 30px;
+}
+
+.features__item--watch::before {
+  background-image: url("../../icons/stack.svg#icon-watch");
+  background-size: 26px 31px;
 }
