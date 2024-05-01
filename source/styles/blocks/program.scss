@@ -12,45 +12,54 @@
 }
 
 .program__item {
+  position: relative;
   background-color: $light-secondary;
   padding: 30px 33px 22px 20px;
   color: $dark-grey;
 }
 
-.program__title {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 29px;
-  font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-}
-
-.program__title::before {
+.program__item::before {
   content: "";
+  position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
   height: 50px;
 }
 
-.program__title--slim::before {
+.program__item--slim::before {
   margin-right: 20px;
+  top: 21px;
+  left: 20px;
   background-image: url("../../icons/stack.svg#icon-cat-slim");
   width: 50px;
 }
 
-.program__title--pro::before {
+.program__item--pro::before {
   margin-right: 11px;
+  top: 24px;
+  left: 13px;
   background-image: url("../../icons/stack.svg#icon-cat-sport");
   width: 67px;
 }
 
+.program__title {
+  margin-top: 0;
+  margin-bottom: 29px;
+  padding-left: 70px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program__title--pro {
+  padding-left: 78px;
+}
+
 .program__description {
   position: relative;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
 }
 
 .program__link {
@@ -59,8 +68,8 @@
   align-items: center;
   gap: 15px;
   font-family: $secondary-font;
-  font-size: 24px;
-  line-height: 37px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: $base-color;

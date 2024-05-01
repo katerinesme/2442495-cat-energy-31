@@ -1,10 +1,10 @@
 .catalog__wrapper {
   margin: 0 auto;
-  padding: 27px 25px 20px;
 }
 
 .catalog__title {
   margin: 0;
+  margin-left: 20px;
   margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
@@ -18,22 +18,111 @@
   list-style: none;
 }
 
+.catalog__item {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $ligther-grey;
+}
+
+.catalog__item--show-more {
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog__item:first-child {
+  border-top: 1px solid $ligther-grey;
+}
+
+.catalog__image-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+}
+
+.catalog__card-info-wrapper {
+  width: 140px;
+}
+
 .catalog__photo-link {
   display: block;
+  cursor: pointer;
+}
+
+.catalog__photo-link:hover {
+  opacity: 0.6;
 }
 
 .catalog__title-link {
+  display: block;
+  width: 76px;
   font-family: $secondary-font;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
   color: $base-third;
   text-transform: uppercase;
   text-decoration: none;
 }
 
+.catalog__title-link:hover,
+.catalog__title-link:focus {
+  opacity: 0.6;
+}
+
+.catalog__title-link:active {
+  opacity: 0.3;
+}
+
+.catalog__item--show-more .catalog__title-link {
+  width: fit-content;
+}
+
+.catalog__item--show-more .catalog__card-title {
+  margin-bottom: 8px;
+}
+
+.catalog__item--show-more .catalog__title-link::before {
+  content: "";
+  display: inherit;
+  margin: 5px auto 23px;
+  mask-image: url("../../icons/stack.svg#icon-plus");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: $light-grey;
+  width: 30px;
+  height: 30px;
+}
+
+.catalog__card-title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
 .catalog__table {
+  border-collapse: collapse;
+  width: 100%;
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
+}
+
+.catalog__table-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__link {
+  margin-top: 17px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__text {
+  margin-top: 0;
+  margin-bottom: 4px;
 }

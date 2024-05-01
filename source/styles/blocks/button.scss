@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  cursor: pointer;
   width: 100%;
   padding: 10px 15px;
   font-family: $secondary-font;
@@ -15,7 +16,22 @@
   color: $light-base;
 }
 
+.button--primary:hover,
+.button--primary:focus {
+  background-color: $accent-color-dark;
+}
+
+.button--primary:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--secondary {
   background-color: $light-secondary;
   color: $dark-grey;
+}
+
+.button--secondary:hover,
+.button--secondary:focus,
+.button--secondary:active {
+  background-color: $ligther-grey;
 }
