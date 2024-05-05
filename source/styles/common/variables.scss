@@ -1,12 +1,23 @@
 /* здесь используйте глобальные переменные */
+
+//viewports
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
+
+
+//fonts
 $base-font: "Lato", sans-serif;
 $secondary-font: "Oswald", sans-serif;
+
+//colors
 $base-color: #000000;
 $base-secondary: #111111;
 $base-third: #222222;
 $dark-grey: #444444;
 $middle-grey: #666666;
 $light-grey: #d9d9d9;
+$light-grey2:#eaeaea;
 $ligther-grey: #ebebeb;
 $light-base: #ffffff;
 $light-secondary: #f2f2f2;

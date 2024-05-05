@@ -1,6 +1,6 @@
 .example {
   padding: 25px 20px 40px;
-  background-color: $light-secondary;
+  background-color: $light-grey2;
 }
 
 .example__title {
@@ -8,6 +8,7 @@
   margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
+  font-weight: 400;
 }
 
 .example__description {
@@ -38,6 +39,7 @@
 .example__definition {
   margin: 0;
   margin-bottom: 8px;
+  margin-top: 10px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
@@ -45,9 +47,12 @@
 
 .example__meaning {
   margin: 0;
+  margin-bottom: -20px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  background-color: $light-grey2;
+  width: 77px;
 }
 
 .example__expenses {

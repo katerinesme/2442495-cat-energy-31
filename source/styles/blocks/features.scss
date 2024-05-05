@@ -2,6 +2,20 @@
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 105px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid $light-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 106px;
+    padding-bottom: 69px;
+    border-bottom: none;
+  }
 }
 
 .features__title {
@@ -12,6 +26,12 @@
   font-size: 36px;
   line-height: 40px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .features__list {
@@ -21,6 +41,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 37px;
+  }
 }
 
 .features__item {
@@ -29,6 +55,11 @@
   align-items: center;
   gap: 20px;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 249px;
+    gap: 31px;
+  }
 }
 
 .features__item::before {
@@ -38,6 +69,12 @@
   background-position: center;
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .features__item--leaf::before {
@@ -58,4 +95,13 @@
 .features__item--watch::before {
   background-image: url("../../icons/stack.svg#icon-watch");
   background-size: 26px 31px;
+}
+
+.features__item-desc {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 57px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
