@@ -1,18 +1,55 @@
 .example {
   padding: 25px 20px 40px;
   background-color: $light-grey2;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 101px;
+    background-image: linear-gradient(to bottom, $light-base 61%, $light-base 61%, $light-grey2 61%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 75px;
+  }
 }
 
 .example__title {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
   font-family: $secondary-font;
   font-size: 36px;
+  line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.example__info {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 367px 1fr;
+  }
 }
 
 .example__description {
+  margin-top: 0;
+  margin-bottom: 20px;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .example__list {
@@ -21,9 +58,17 @@
   gap: 32px;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 42px;
+  }
 }
 
 .example__item {
@@ -31,38 +76,66 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 124px;
+  min-height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    min-height: 72px;
+  }
 }
 
 .example__definition {
   margin: 0;
   margin-bottom: 8px;
-  margin-top: 10px;
+  margin-top: 9px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__meaning {
-  margin: 0;
-  margin-bottom: -20px;
+  margin: auto 0 -20px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   background-color: $light-grey2;
   width: 77px;
+
+  @media (min-width: $tablet-width) {
+    margin: auto 0 -10px;
+    background-color: $light-base;
+    font-size: 14px;
+    line-height: 14px;
+    width: 125px;
+  }
 }
 
 .example__expenses {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+  }
 }
 
 .example__slider {

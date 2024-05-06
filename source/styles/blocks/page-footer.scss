@@ -9,6 +9,11 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    flex-flow: row wrap;
+  }
 }
 
 .page-footer__social {
@@ -19,9 +24,19 @@
   flex-wrap: wrap;
   align-items: center;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 288px;
+    margin-right: auto;
+  }
 }
 
 .page-footer__logo {
   margin-bottom: 0;
   align-self: center;
+  width: 128px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }

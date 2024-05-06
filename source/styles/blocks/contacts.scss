@@ -1,8 +1,26 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 78px 60px 80px;
+    position: absolute;
+    width: 565px;
+    min-height: 199px;
+    background-color: $light-base;
+    left: 110px;
+    top: 95px;
+  }
 }
 
 .contacts__title {
@@ -14,14 +32,33 @@
   text-transform: uppercase;
   color: $base-secondary;
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
 }
 
 .contacts__address {
   width: 140px;
-  font-size: 14px;
   line-height: 20px;
   color: $dark-grey;
   font-style: normal;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 157px;
+    min-height: 80px;
+  }
+}
+
+.contacts__city {
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
 
 .contacts--catalog {
