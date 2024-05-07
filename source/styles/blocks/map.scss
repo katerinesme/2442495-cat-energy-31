@@ -3,4 +3,31 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 362px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/map-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/map-tablet@1x.png");
+    min-height: 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/map-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/map-desktop@2x.png");
+    }
+  }
+}
+
+.map__body {
+  display: block;
+  border: 0;
+  width: 100%;
 }
