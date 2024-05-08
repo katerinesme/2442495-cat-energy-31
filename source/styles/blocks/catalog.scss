@@ -11,9 +11,7 @@
 }
 
 .catalog__title {
-  margin: 0;
-  margin-left: 20px;
-  margin-bottom: 40px;
+  margin: 0 20px 40px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
@@ -60,6 +58,7 @@
     width: 324px;
     min-height: 511px;
     background-image: linear-gradient(to bottom, $light-base 16%, $light-base 16%, $light-secondary 16%);
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -206,9 +205,12 @@
 }
 
 .catalog__table-row {
-  border-bottom: 1px solid $light-grey3;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $light-grey3;
+  }
 }
 
 .catalog__link {

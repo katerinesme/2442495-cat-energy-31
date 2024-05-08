@@ -6,7 +6,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 27px;
-  padding: 13px 21px 14px 20px;
+  padding: 13px 21px 11px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 25px 33px 0 30px;
@@ -19,7 +19,7 @@
   }
 }
 
-.main-heder__wrapper--secondary {
+.main-header__wrapper--secondary {
   border-bottom: 1px solid $light-grey;
 
   @media (min-width: $tablet-width) {
