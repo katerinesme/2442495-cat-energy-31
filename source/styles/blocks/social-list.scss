@@ -1,0 +1,40 @@
+.social-list {
+  list-style-type: none;
+}
+
+.social-list__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-list__link::before {
+  content: "";
+  display: inherit;
+  width: 28px;
+  height: 22px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $middle-grey;
+}
+
+.social-list__link--vk::before {
+  mask-image: url("../../icons/stack.svg#icon-vk");
+}
+
+.social-list__link--youtube::before {
+  mask-image: url("../../icons/stack.svg#icon-youtube");
+}
+
+.social-list__link--tg::before {
+  mask-image: url("../../icons/stack.svg#icon-tg");
+}
+
+.social-list__link:hover::before,
+.social-list__link:focus::before {
+  background-color: $accent-color;
+}
+
+.social-list__link:active::before {
+  opacity: 0.3;
+}

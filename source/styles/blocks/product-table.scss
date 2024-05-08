@@ -1,0 +1,33 @@
+.product-table__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.product-table__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product-table__item-title {
+  font-family: $secondary-font;
+  color: $base-third;
+  text-transform: uppercase;
+  grid-column: 1/-1;
+}
+
+.product-table__item {
+  line-height: 14px;
+}
+
+.product-table__item-action {
+  grid-column: 1/-1;
+}
+
+.product-table__link {
+  width: 100%;
+}

@@ -1,0 +1,37 @@
+.author-logo {
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark-grey;
+  text-decoration: none;
+}
+
+.author-logo__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+}
+
+.author-logo__text::after {
+  content: "";
+  display: inherit;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../icons/stack.svg#icon-html-logo");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $middle-grey;
+}
+
+.author-logo__text:hover::after,
+.author-logo__text:focus::after {
+  background-color: $accent-color;
+}
+
+.author-logo__text:active {
+  opacity: 0.3;
+}

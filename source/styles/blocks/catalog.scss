@@ -1,0 +1,229 @@
+.catalog__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 71px;
+  }
+}
+
+.catalog__title {
+  margin: 0 20px 40px;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 84px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
+}
+
+.catalog__item {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $ligther-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 37px 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    width: 324px;
+    min-height: 511px;
+    background-image: linear-gradient(to bottom, $light-base 16%, $light-base 16%, $light-secondary 16%);
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 40px;
+    width: 245px;
+  }
+}
+
+.catalog__item--show-more {
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog__item:first-child {
+  border-top: 1px solid $ligther-grey;
+
+  @media (min-width: $tablet-width) {
+    border-top: 0;
+  }
+}
+
+.catalog__image-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    width: 200px;
+    height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+    width: 169px;
+  }
+}
+
+.catalog__card-info-wrapper {
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.catalog__photo-link {
+  display: block;
+  cursor: pointer;
+}
+
+.catalog__photo-link:hover {
+  opacity: 0.6;
+}
+
+.catalog__title-link {
+  display: block;
+  width: 76px;
+  font-family: $secondary-font;
+  color: $base-third;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+    width: 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
+    margin-bottom: 24px;
+  }
+}
+
+.catalog__title-link:hover,
+.catalog__title-link:focus {
+  opacity: 0.6;
+}
+
+.catalog__title-link:active {
+  opacity: 0.3;
+}
+
+.catalog__item--show-more .catalog__title-link {
+  width: fit-content;
+}
+
+.catalog__item--show-more .catalog__card-title {
+  margin-bottom: 8px;
+}
+
+.catalog__item--show-more .catalog__title-link::before {
+  content: "";
+  display: inherit;
+  margin: 5px auto 23px;
+  mask-image: url("../../icons/stack.svg#icon-plus");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: $light-grey;
+  width: 30px;
+  height: 30px;
+}
+
+.catalog__card-title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.catalog__table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.catalog__table-body {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.catalog__table-row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $light-grey3;
+  }
+}
+
+.catalog__link {
+  margin-top: 17px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
+}
+
+.catalog__text {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
