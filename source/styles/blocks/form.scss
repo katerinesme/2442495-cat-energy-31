@@ -1,5 +1,5 @@
 .form__field {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   padding: 13px;
   width: 100%;
   font-family: $secondary-font;
@@ -9,6 +9,10 @@
   text-transform: uppercase;
   background-color: $light-base;
   border: 1px solid $light-secondary;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__button {

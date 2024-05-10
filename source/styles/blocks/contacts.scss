@@ -45,13 +45,13 @@
   line-height: 20px;
   color: $dark-grey;
   font-style: normal;
-  text-align: right;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     width: 157px;
     min-height: 80px;
+    text-align: end;
   }
 }
 

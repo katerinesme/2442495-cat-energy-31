@@ -2,7 +2,6 @@
   background-image: url("../../images/map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 362px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/map-mobile@2x.png");
@@ -30,4 +29,9 @@
   display: block;
   border: 0;
   width: 100%;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }

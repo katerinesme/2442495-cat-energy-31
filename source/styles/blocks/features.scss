@@ -42,10 +42,11 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    gap: 37px;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-    row-gap: 37px;
     counter-reset: list 0;
   }
 }
