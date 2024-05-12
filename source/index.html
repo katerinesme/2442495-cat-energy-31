@@ -52,7 +52,7 @@
         <picture>
           <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
-          <img class="promo__image" src="images/index-can-mobile@1x.png" width="280" height="270" srcset="images/index-can-desktop@2x.png" alt="Банка оранжевого цвета для питания котов, со вкусом курицы.">
+          <img class="promo__image" src="images/index-can-mobile@1x.png" width="280" height="270" srcset="images/index-can-mobile@2x.png 2x" alt="Банка оранжевого цвета для питания котов, со вкусом курицы.">
         </picture>
         <a class="promo__link button button--primary" href="#">Подобрать программу</a>
       </section>
@@ -111,18 +111,19 @@
         </div>
         <div class="example__slider slider">
           <span class="visually-hidden">Пример изменений кота Бориса</span>
-          <div class="slider__wrapper slider__wrapper--before">
-            <picture>
-              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
-              <img class="slider__img" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Кот Борис до перехода на Cat Energy">
-            </picture>
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
+            <img class="slider__img slider__img--before" src="images/cat-before-mobile@1x.png" width="280" height="256" srcset="images/cat-before-mobile@2x.png 2x" alt="Кот Борис до перехода на Cat Energy">
+          </picture>
+          <div class="slider__curtain">
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Ползунок слайдера</span>
+            </button>
           </div>
-          <div class="slider__wrapper slider__wrapper--after">
-            <picture>
-              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
-              <img class="slider__img" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Кот Борис после перехода на Cat Energy">
-            </picture>
-          </div>
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
+            <img class="slider__img slider__img--after" src="images/cat-after-mobile@1x.png" width="280" height="256" srcset="images/cat-after-mobile@2x.png 2x" alt="Кот Борис после перехода на Cat Energy">
+          </picture>
         </div>
       </section>
       <!-- Секция: контакты - адрес и карта -->

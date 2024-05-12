@@ -116,6 +116,8 @@
 }
 
 .features__item-desc {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 57px;
