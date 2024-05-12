@@ -53,6 +53,10 @@
     min-height: 80px;
     text-align: end;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .contacts__city {

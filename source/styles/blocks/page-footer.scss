@@ -15,6 +15,10 @@
     align-items: center;
     gap: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .page-footer__social {
@@ -44,5 +48,9 @@
   @media (min-width: $tablet-width) {
     margin-right: 140px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 398px;
   }
 }
