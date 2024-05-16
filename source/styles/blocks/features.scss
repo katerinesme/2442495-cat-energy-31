@@ -50,6 +50,10 @@
     counter-reset: list 0;
     max-width: 650px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
 }
 
 .features__item {
