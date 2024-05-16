@@ -12,6 +12,7 @@
   @media (min-width: $tablet-width) {
     padding: 55px 30px;
     flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
   }
@@ -23,7 +24,6 @@
 
 .page-footer__social {
   margin: 0 0 20px;
-  padding: 20px 0;
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
@@ -35,19 +35,18 @@
     padding: 0;
     margin: 0;
     max-width: 235px;
-    margin-right: auto;
     border: none;
   }
 }
 
 .page-footer__logo {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   align-self: center;
   width: 128px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 140px;
     margin-bottom: 0;
+    margin-right: 37px;
   }
 
   @media (min-width: $desktop-width) {

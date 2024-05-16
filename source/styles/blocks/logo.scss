@@ -12,10 +12,13 @@
 }
 
 .logo__text {
+  display: block;
   margin: 0;
 }
 
 .logo__logo-text--header {
+  display: block;
+
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 22px;

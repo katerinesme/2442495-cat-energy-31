@@ -1,7 +1,7 @@
 .button {
-  display: block;
+  display: grid;
+  align-items: center;
   cursor: pointer;
-  width: 100%;
   padding: 10px 15px;
   font-family: $secondary-font;
   text-transform: uppercase;

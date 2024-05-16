@@ -3,16 +3,22 @@
   grid-template-columns: 50% auto 50%;
   width: min(100%, 280px);
   aspect-ratio: 140/128;
+
+  @media (min-width: $tablet-width) {
+    width: min(100%, 560px);
+    aspect-ratio: 280/256;
+  }
 }
 
 .slider__curtain {
   z-index: 1;
   display: grid;
   align-items: center;
-  width: 2px;
+  width: 4px;
   height: 100%;
   border-radius: 2px;
-  background-color: #666666;
+  color: #666666;
+  background-color: currentColor;
   cursor: col-resize;
 }
 
@@ -39,9 +45,10 @@
   align-items: center;
   width: 40px;
   height: 40px;
-  border: 2px solid #666666;
-  border-radius: 20px;
   background-color: #ffffff;
+  color: inherit;
+  border: 2px solid currentColor;
+  border-radius: 20px;
   cursor: col-resize;
 }
 
@@ -50,5 +57,10 @@
   width: 24px;
   height: 18px;
   mask-image: url("../../icons/stack.svg#icon-slider-button");
-  background-color: #666666;
+  background-color: currentColor;
+}
+
+
+.slider__curtain:hover {
+  color: $accent-color;
 }

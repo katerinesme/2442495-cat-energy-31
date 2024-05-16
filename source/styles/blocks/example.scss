@@ -4,11 +4,14 @@
 
   @media (min-width: $tablet-width) {
     padding: 45px 30px 101px;
-    background-image: linear-gradient(to bottom, $light-base 61%, $light-base 61%, $light-grey2 61%);
+    background-image: linear-gradient(to bottom, $light-base 57.3%, $light-base 57.3%, $light-grey2 57.3%);
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 75px;
+    display: grid;
+    grid-template-columns: 460px 1fr;
+    column-gap: 190px;
   }
 }
 
@@ -32,8 +35,16 @@
 
 .example__info {
   @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
     display: grid;
     grid-template-columns: 367px 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -67,7 +78,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
     gap: 42px;
+    justify-content: stretch;
   }
 }
 
@@ -106,18 +119,22 @@
 
 .example__meaning {
   margin: auto 0 -20px;
+  padding: 0 10px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   background-color: $light-grey2;
-  width: 77px;
+
+  @media (width < $tablet-width) {
+    width: 85px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: auto 0 -10px;
+    padding: 0 8px;
     background-color: $light-base;
     font-size: 14px;
     line-height: 14px;
-    width: 125px;
   }
 }
 
@@ -130,14 +147,25 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-top: 11px;
     grid-column: 2;
     display: flex;
     flex-direction: column;
+    row-gap: 9px;
     align-items: flex-end;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    flex-direction: row;
+    column-gap: 63px;
   }
 }
 
 .example__slider {
   margin: 0 auto;
+  grid-column: 2;
+  grid-row: 1/3;
+  justify-content: center;
 }
