@@ -23,6 +23,11 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 0;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
   }
 }
 

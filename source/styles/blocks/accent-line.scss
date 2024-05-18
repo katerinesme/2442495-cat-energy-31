@@ -1,0 +1,11 @@
+.accent-line::before {
+  content: "";
+  position: absolute;
+  top: 42%;
+  height: 2px;
+  width: 100vw;
+  right: 0;
+  background-color: $accent-color;
+  box-shadow: 100vw 0 0 0 $accent-color;
+  z-index: -1;
+}
