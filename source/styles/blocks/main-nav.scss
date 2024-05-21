@@ -126,7 +126,8 @@
   }
 }
 
-
 .main-nav__list--accent .main-nav__link--current::after {
-  background-color: $light-base;
+  @media (width >= 1440px) {
+    background-color: $light-base;
+  }
 }

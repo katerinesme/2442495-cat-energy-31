@@ -1,4 +1,5 @@
 .program__wrapper {
+  margin: 0 auto;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
@@ -7,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 82px 110px 71px;
+    max-width: $max-width-desktop-wrapper;
   }
 }
 
@@ -22,6 +24,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 30px;
+    align-items: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +43,7 @@
   min-height: 266px;
 
   @media (min-width: $tablet-width) {
+    flex-grow: 1;
     grid-template-columns: 340px;
     padding: 77px 63px 53px 52px;
     width: 708px;

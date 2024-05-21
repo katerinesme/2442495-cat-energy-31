@@ -1,10 +1,17 @@
 .example {
-  padding: 25px 20px 40px;
   background-color: $light-grey2;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 30px 101px;
     background-image: linear-gradient(to bottom, $light-base 57.3%, $light-base 57.3%, $light-grey2 57.3%);
+  }
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 101px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,6 +19,7 @@
     display: grid;
     grid-template-columns: 460px 1fr;
     column-gap: 195px;
+    max-width: $max-width-desktop-wrapper;
   }
 }
 
