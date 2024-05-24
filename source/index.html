@@ -17,7 +17,7 @@
 <body class="page__body">
   <!-- Шапка -->
   <div class="page__container">
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <div class="main-header__wrapper">
         <a class="main-header__logo  logo" href="index.html">
           <picture>
@@ -48,7 +48,7 @@
     <!-- Главное содержание -->
     <main class="main-container">
       <!-- Секция: Промо -->
-      <section class="promo">
+      <section class="promo" data-test="hero">
         <div class="promo__wrapper">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
@@ -64,7 +64,7 @@
         </div>
       </section>
       <!-- Секция: типы программ питания -->
-      <section class="program">
+      <section class="program" data-test="programs">
         <div class="program__wrapper">
           <h2 class="visually-hidden">Программы питания для котов</h2>
           <ul class="program__list">
@@ -82,7 +82,7 @@
         </div>
       </section>
       <!-- Секция: функции работы питания -->
-      <section class="features">
+      <section class="features" data-test="features">
         <div class="features__wrapper">
           <h2 class="features__title">Как это работает</h2>
           <ul class="features__list">
@@ -102,7 +102,7 @@
         </div>
       </section>
       <!-- Секция: примеры -->
-      <section class="example">
+      <section class="example" data-test="proof">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <div class="example__info">
@@ -142,7 +142,7 @@
         </div>
       </section>
       <!-- Секция: контакты - адрес и карта -->
-      <section class="contacts">
+      <section class="contacts" data-test="contacts">
         <div class="contacts__wrapper contacts__wrapper--map">
           <h2 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
@@ -155,7 +155,7 @@
       </section>
     </main>
     <!-- Подвал сайта -->
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo logo" href="#">
           <img class="logo__text logo__text--footer" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy логотип">

@@ -17,7 +17,7 @@
 <body class="page__body">
   <div class="page__container">
     <!-- Шапка -->
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <div class="main-header__wrapper main-header__wrapper--secondary">
         <a class="main-header__logo logo" href="index.html">
           <picture>
@@ -48,7 +48,7 @@
     <!-- Главное содержание -->
     <main class="main-container">
       <!-- Каталог продукции -->
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <div class="catalog__wrapper">
           <h1 class="catalog__title">Каталог продукции</h1>
           <ul class="catalog__list">
@@ -314,7 +314,7 @@
         </div>
       </section>
       <!-- Дополнительная продукция -->
-      <section class="extra-products">
+      <section class="extra-products" data-test="additional">
         <div class="extra-products__wrapper">
           <h2 class="extra-products__title accent-line">Дополнительные товары</h2>
           <table class="extra-products__table product-table">
@@ -379,7 +379,7 @@
         </div>
       </section>
       <!-- Контакты страницы каталог -->
-      <section class="contacts contacts--catalog">
+      <section class="contacts contacts--catalog" data-test="contacts">
         <div class="contacts__wrapper contacts__wrapper--map">
           <h2 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
@@ -392,7 +392,7 @@
       </section>
     </main>
     <!-- Подвал сайта -->
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo logo" href="#">
           <img class="logo__text logo__text--footer" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy логотип">

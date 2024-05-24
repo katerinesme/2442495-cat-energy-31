@@ -119,6 +119,10 @@
   color: $light-base;
   text-align: center;
 
+  @media ($tablet-width < width < $desktop-width) {
+    grid-column: 2;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     text-align: left;
