@@ -1,4 +1,5 @@
 .features__wrapper {
+  position: relative;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
@@ -8,7 +9,8 @@
     padding-left: 30px;
     padding-right: 105px;
     padding-bottom: 47px;
-    border-bottom: 1px solid $light-grey;
+    //border-bottom: 1px solid $light-grey;
+    max-width: $max-width-tablet-wrapper;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +19,19 @@
     padding-bottom: 69px;
     border-bottom: none;
     max-width: $max-width-desktop-wrapper;
+  }
+}
+
+@media ($mobile-width < width < $desktop-width) {
+  .features__wrapper::after {
+    content: "";
+    background-color: #e6e6e6;
+    width: calc(100vw + 100%);
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: 100vw 0 #d9d9d9;
   }
 }
 
@@ -44,7 +59,6 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     gap: 37px;
     flex-flow: row wrap;
     justify-content: space-between;

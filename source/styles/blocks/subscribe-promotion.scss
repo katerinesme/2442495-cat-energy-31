@@ -1,12 +1,15 @@
 .subscribe-promotion__wrapper {
+  margin: 0 auto;
   padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 80px 68px;
+    max-width: $max-width-tablet-wrapper;
   }
 
   @media (min-width: $desktop-width) {
     padding: 96px 110px 104px;
+    max-width: $max-width-desktop-wrapper;
   }
 }
 
