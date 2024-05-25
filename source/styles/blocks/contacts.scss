@@ -9,7 +9,9 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     padding: 60px 70px;
+    max-width: 920px;
   }
 
   @media (min-width: $desktop-width) {

@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px 45px;
+    max-width: $max-width-tablet-wrapper;
   }
 
   @media (min-width: $desktop-width) {
@@ -186,17 +187,18 @@
 
 .program__link::after {
   content: "";
-  mask-image: url("../../icons/stack.svg#icon-arrow");
-  mask-repeat: no-repeat;
-  mask-size: contain;
-  background-color: $base-color;
+  background-image: url("../../icons/stack.svg#icon-arrow");
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 32px;
-  height: 10px;
+  height: 12px;
 }
 
 .program__link:hover::after,
 .program__link:focus::after {
-  background-color: $accent-color;
+  transform: scale(1.25, 1);
+  width: 40px;
+  transition: 0.4s;
 }
 
 .program__link:active {

@@ -26,6 +26,7 @@
     padding-left: 30px;
     padding-right: 29px;
     background-image: none;
+    max-width: $max-width-tablet-wrapper;
   }
 
   @media (min-width: $desktop-width) {
