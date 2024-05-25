@@ -1,12 +1,17 @@
 .logo {
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     opacity: 0.8;
   }
 
-  &:active {
+  &:focus {
+    outline: 3px solid $base-color;
+    border-radius: 3px;
+  }
+
+  &:active,
+  &focus {
     opacity: 0.6;
   }
 }

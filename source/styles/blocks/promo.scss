@@ -7,7 +7,7 @@
   padding-left: 20px;
   padding-right: 20px;
   background-image:
-    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $light-base 302px),
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, $light-base 63%),
     image-set(
       url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x,
@@ -78,7 +78,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 80px 0 40px 80px;
+    margin: 65px 0 3px 80px;
   }
 }
 
@@ -103,7 +103,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 24px 80px;
+    margin: 0 0 0 80px;
   }
 }
 
@@ -153,5 +153,6 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
+    margin-top: 38px;
   }
 }

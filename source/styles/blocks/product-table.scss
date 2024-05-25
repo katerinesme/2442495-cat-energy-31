@@ -66,10 +66,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 282px 1fr 90px 244px;
+    grid-template-columns: 310px 1fr 72px 244px;
     align-items: center;
-    column-gap: 40px;
-    padding: 14px 0 15px;
+    column-gap: 13px;
+    padding: 14px 0;
   }
 }
 
@@ -111,6 +111,10 @@
 
 .product-table__item + .product-table__item {
   justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+  }
 }
 
 .product-table__item-action {

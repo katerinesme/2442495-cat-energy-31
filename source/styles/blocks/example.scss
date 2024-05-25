@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $light-base 57.3%, $light-base 57.3%, $light-grey2 57.3%);
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $light-base 23%, $light-base 23%, $light-grey2 23%);
+  }
 }
 
 .example__wrapper {
