@@ -1,11 +1,18 @@
 .social-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .social-list__link {
+  padding: 19px 0;
   display: block;
   text-decoration: none;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 0 7px;
+  }
 }
 
 .social-list__link::before {

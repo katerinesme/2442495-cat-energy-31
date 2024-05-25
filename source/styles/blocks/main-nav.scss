@@ -1,12 +1,6 @@
-.main-nav {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .main-nav__toggle {
-  width: 24px;
-  height: 24px;
-  background-image: url("../../icons/stack.svg#icon-burger-menu");
+  display: block;
+  position: absolute;
   background-color: transparent;
   border: none;
 
@@ -15,8 +9,50 @@
   }
 }
 
+// меню открыто на мобильном устройстве
+
+.main-nav--opened {
+  @media (width < $tablet-width) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.main-nav--opened .main-nav__link {
+  @media (width < $tablet-width) {
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 22px 20px 24px;
+    border-top: 1px solid $light-grey;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 22px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../icons/stack.svg#icon-close");
+}
+
+// меню закрыто на мобильном устройстве
+
+.main-nav--closed .main-nav__list {
+  @media (width < $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  top: 20px;
+  right: 21px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/stack.svg#icon-burger-menu");
+}
+
 .main-nav__list {
-  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -24,7 +60,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px 33px;
+    gap: 20px 35px;
     margin-left: auto;
     max-width: 470px;
   }
@@ -52,6 +88,18 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 11px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-nav__list--accent .main-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $light-base;
+    padding-top: 16px;
+    padding-bottom: 8px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -67,11 +115,19 @@
 }
 
 .main-nav__link--current::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: $accent-color;
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $accent-color;
+  }
+}
+
+.main-nav__list--accent .main-nav__link--current::after {
+  @media (width >= 1440px) {
+    background-color: $light-base;
+  }
 }

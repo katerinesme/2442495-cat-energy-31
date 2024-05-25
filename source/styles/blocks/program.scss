@@ -1,4 +1,5 @@
 .program__wrapper {
+  margin: 0 auto;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
@@ -7,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 82px 110px 71px;
+    max-width: $max-width-desktop-wrapper;
   }
 }
 
@@ -35,11 +37,12 @@
   flex-direction: column;
   position: relative;
   background-color: $light-secondary;
-  padding: 30px 33px 22px 20px;
+  padding: 30px 20px 22px;
   color: $dark-grey;
   min-height: 266px;
 
   @media (min-width: $tablet-width) {
+    flex-grow: 1;
     grid-template-columns: 340px;
     padding: 77px 63px 53px 52px;
     width: 708px;
@@ -123,20 +126,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 214px;
+    padding-left: 162px;
     margin-bottom: 73px;
   }
 }
 
 .program__title--pro {
-  padding-left: 78px;
+  padding-left: 71px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 214px;
+    padding-left: 162px;
     margin-bottom: 73px;
   }
 }
@@ -144,11 +147,15 @@
 .program__description {
   position: relative;
   margin-top: 0;
-  margin-bottom: 42px;
+  margin-bottom: 18px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $light-grey;
 
   @media (min-width: $tablet-width) {
     color: $base-color;
     margin-bottom: 52px;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -170,6 +177,7 @@
   color: $base-color;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
     font-size: 20px;
     line-height: 30px;
     gap: 25px;
