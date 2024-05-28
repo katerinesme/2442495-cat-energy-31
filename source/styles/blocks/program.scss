@@ -190,14 +190,14 @@
   background-image: url("../../icons/stack.svg#icon-arrow");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position-x: -8px;
   width: 32px;
   height: 12px;
 }
 
 .program__link:hover::after,
 .program__link:focus::after {
-  transform: scale(1.25, 1);
-  width: 40px;
+  background-position-x: 0;
   transition: 0.4s;
 }
 
