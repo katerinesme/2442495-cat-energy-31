@@ -38,7 +38,7 @@
   margin-bottom: 10px;
   gap: 56px;
   align-items: center;
-  width: 100%;
+  width: fit-content;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
