@@ -9,49 +9,6 @@
   }
 }
 
-// меню открыто на мобильном устройстве
-
-.main-nav--opened {
-  @media (width < $tablet-width) {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-.main-nav--opened .main-nav__link {
-  @media (width < $tablet-width) {
-    margin-right: -20px;
-    margin-left: -20px;
-    padding: 22px 20px 24px;
-    border-top: 1px solid $light-grey;
-  }
-}
-
-.main-nav--opened .main-nav__toggle {
-  top: 22px;
-  right: 20px;
-  width: 18px;
-  height: 18px;
-  background-image: url("../../icons/stack.svg#icon-close");
-}
-
-// меню закрыто на мобильном устройстве
-
-.main-nav--closed .main-nav__list {
-  @media (width < $tablet-width) {
-    display: none;
-  }
-}
-
-.main-nav--closed .main-nav__toggle {
-  top: 20px;
-  right: 21px;
-  width: 24px;
-  height: 24px;
-  background-image: url("../../icons/stack.svg#icon-burger-menu");
-}
-
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -71,10 +28,6 @@
 }
 
 .main-nav__link {
-  display: block;
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
@@ -83,6 +36,9 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 18px;
     line-height: 24px;
   }
@@ -129,5 +85,85 @@
 .main-nav__list--accent .main-nav__link--current::after {
   @media (width >= 1440px) {
     background-color: $light-base;
+  }
+}
+
+//реализация открытия и закрытия меню на мобильном устройстве
+
+
+@media (width < $tablet-width) {
+  .main-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  // меню закрыто на мобильном устройстве
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    top: 20px;
+    right: 21px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/stack.svg#icon-burger-menu");
+  }
+
+  // меню открыто на мобильном устройстве
+
+  .main-nav--opened .main-nav__list {
+    position: absolute;
+    background-color: $light-base;
+    width: 100%;
+    right: 0;
+    z-index: 1;
+  }
+
+  .main-nav--opened .main-nav__link {
+    display: block;
+    padding: 22px 20px 24px;
+  }
+
+  .main-nav--opened .main-nav__item {
+    border-top: 1px solid $light-grey;
+  }
+
+  .main-nav--opened .main-nav__item:last-child {
+    border-bottom: 1px solid $light-grey;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 22px;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../../icons/stack.svg#icon-close");
+  }
+
+  // меню открыто на мобильном устройстве, при отсутствии JS
+
+  .main-nav--no-js {
+    display: block;
+  }
+
+  .main-nav--no-js .main-nav__link {
+    display: block;
+    padding: 22px 20px 24px;
+  }
+
+  .main-nav--no-js .main-nav__item {
+    margin-right: -20px;
+    margin-left: -20px;
+    border-top: 1px solid $light-grey;
+  }
+
+  .main-nav--no-js .main-nav__item:last-child {
+    border-bottom: 1px solid $light-grey;
+  }
+
+  .main-nav--no-js .main-nav__toggle {
+    display: none;
   }
 }
