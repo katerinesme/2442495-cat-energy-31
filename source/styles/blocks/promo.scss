@@ -130,6 +130,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/-1;
     grid-row: 1/15;
+    align-self: start;
   }
 }
 
