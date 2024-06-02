@@ -112,7 +112,7 @@
 .product-table__item + .product-table__item {
   justify-self: end;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     justify-self: start;
   }
 }
